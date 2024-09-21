@@ -4,7 +4,7 @@
 MedSmart est une application basée sur l'intelligence artificielle pour la détection de maladies respiratoires, principalement programmée en Python.
 Elle utilise l'analyse d'images radiographiques pour diagnostiquer la pneumonie et la tuberculose.
 <p align="center">
-  <img width="375" height="258" src="uploaded_images/icons8-artificial-intelligence-64(1).png">
+  <img width="64" height="64" src="uploaded_images/icons8-artificial-intelligence-64(1).png">
 </p>
 
 ## Introduction 
@@ -37,14 +37,26 @@ En cliquant sur le service **Symptom-Based Diagnosis Proposal**, vous serez diri
 
 **Resultat de prediction** :
 Puis vous serez  conduit à la page des résultats, comme le montre la figure suivante.
-![resultat de prediction](uploaded_images/Resultat_de_prediction)
+![resultat de prediction](uploaded_images/Resultat_de_prediction.png)
 **Prediction de tuberculose et pneumonie** :
 En cliquant sur l’un des services suivants : **Pneumonia Detection** ou **Tuberculosis Detection**, vous serez dirigé vers une page où vous devrez télécharger l’image de la radiographie pulmonaire de votre patient et indiquer s’il s’agit de pneumonie ou de tuberculose. Ces informations seront ensuite utilisées comme entrées pour l’algorithme, qui tentera de prédire la présence de l’une de ces maladies.
-![Prediction de tuberculose](uploaded_images/Prediction_de_pneumonie.png)
-![resultat de prediction](uploaded_images/Prediction_de_pneumonie1.png)
+![Prediction de tuberculose](uploaded_images/Prediction_de_tuberculose.png)
+![resultat de prediction](uploaded_images/Prediction_de_tuberculose1.png)
 ![Prediction de pneumonie](uploaded_images/Prediction_de_pneumonie.png) 
 ![resultat de prediction](uploaded_images/Prediction_de_pneumonie1.png)
 
+**MedSmart** vise à révolutionner le diagnostic médical en utilisant l'intelligence artificielle pour analyser des images radiographiques. Grâce à des modèles avancés, notre projet permet des diagnostics précis et rapides de maladies telles que la pneumonie et la tuberculose, offrant ainsi un outil précieux pour les professionnels de la santé.
+
+## Membres de l'équipe
+
+- [Asmaa Ehou](https://github.com/Asmaaeh) 
+- [Imane Chaik](https://github.com/rivenos) 
+- [Khadija Elmohtaj](https://github.com/khadija2023)
+- [Imane ELGHERB](https://github.com/EMAima) 
+- [Hajar Ed-darrajy](https://github.com/haizy1) -Author
+- [Salma Chakiri](https://github.com/chakirisalma)
+- [Saaida HNAIS](https://github.com/saaida1)
+- [Yahya BOUJABAL](https://github.com/Yahya04BJ)
 
 
 
