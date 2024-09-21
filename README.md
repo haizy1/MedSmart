@@ -22,6 +22,8 @@ Notre application, développée en Python, utilise l'intelligence artificielle p
 ## Interface utilisateur
 **Page d'accueil** :
 
+Sur cette page, vous trouverez une liste complète de nos services, conçus pour répondre à une variété de besoins, chaque service étant accompagné d’une brève description expliquant son contenu et ses bénéfices pour nos utilisateurs.
+
 ![page d'accueil](uploaded_images/home.png)
 
 
