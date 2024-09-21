@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>MedSmart</title>
+    {% load static %}
+    <style>
+        .box-3rd,
+        .box-5th,
+        .box-6th,
+        .box-7th,
+        .box-8th,
+        .box-9th {
+          margin-bottom: 30px;
+        }
+        
+        
+      </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/168ebc7feb.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+  </head>
+  <body>
+
+    <!-- For large devices  -->
+    <header class="hidden md:block lg:block h-[60vh] lg:h-[85vh] w-full relative bg-[url({% static "3522195.jpg" %})] bg-no-repeat bg-cover">
+      <!-- Navigation Bar here  -->
+      <!-- Your navigation code here -->
+      
+      <!-- Phrase overlay -->
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+        <p class="text-5xl lg:text-7xl font-bold font-serif mb-4">MedSmart</p>
+        <p class="text-xl lg:text-2xl ">Your intelligent partner in medical excellence</p>
+      </div>
+      
+       <!-- Login Button -->
+  <div id="home" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+    <div class="flex flex-col justify-center">
+      <a href="{% url 'login' %}"
+        class="text-white flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2"
+      >
+        <svg class="w-9 h-6 mx-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg> 
+        <span class="font-bold">LOGIN</span>
+      </a>
+    </div>
+  </div>
+     <!-- Navigation Bar here  -->
+      <nav
+        class="bg-gradient-to-r from-blue-700 to-[#ffffff00] fixed py-2 w-full px-24 flex justify-between shadow-lg backdrop-blur-md z-50"
+      >
+      <a href="" class="flex items-center">
+        <!-- Image placed beside the title -->
+        <img src="{% static "logo.png" %}" alt="MedSmart Logo" class="h-8 mr-2">
+        <!-- Title -->
+        <p class="font-Inter font-bold text-lg text-white">MedSmart </p>
+    </a>
+        <div class="flex">
+          <ul class="flex text-white font-mono mr-8">
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded bg-blue-500 px-4 py-2" href="#about">About Us</a>
+            </li>
+            <li
+             class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded bg-blue-500 px-4 py-2" href="#services">Services</a>
+            </li>
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded bg-blue-500 px-4 py-2" href="#call">Contact</a>
+            </li>
+          </ul>
+          <a href="{% url 'login' %}" class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Login
+        </a>
+        
+        
+        </div>
+      </nav>
+
+      <div id="home" class="absolute top-[30rem] left-[29em] z-10">
+        <div class="flex flex-col justify-center">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="about-section my-6 mx-4 lg:my-10 lg:mx-24">
+        <div class="lg:flex lg:items-center">
+          <!-- Left Section -->
+          <div class="lg:w-[45%]">
+            <h1 class="lg:text-5xl text-2xl font-bold font-serif my-2 lg:my-4">
+              Welcome to MedSmart
+            </h1>
+            <p class="text-sm lg:text-base my-3">
+              MedSmart provides a centralized and intelligent solution, empowering healthcare professionals with advanced tools to analyze diagnostic images with precision, and streamline workflows. Committed to the highest standards of data security and user experience, we strive to enhance the efficiency of medical practices and contribute to improved patient care.
+            </p>
+            <!-- Register Button -->
+            <div class="mt-4">
+              <a href="{% url 'register' %}" class="text-white flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2">
+                <svg class="w-6 h-6 mx-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg> 
+                Register
+              </a>
+            </div>
+          </div>
+          <!-- Right Section -->
+          <div class="hidden md:hidden w-[50%] m-auto my-8 lg:flex lg:items-end lg:justify-end">
+            <img src="{% static "HeroSmall1.png" %}" class="lg:relative w-96 lg:w-70 lg:left-5 lg:bottom-5 lg:z-0"  alt="HappySmile">
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <section id="services" class="bg-blue-600 py-12 px-4 md:px-8 lg:px-24">
+        <h2 style="color:white; "class="text-2xl lg:text-4xl font-bold text-center my-2 lg:my-3">Services</h2>
+        <h4 style="color:white; " class="text-lg lg:text-xl font-semibold text-center my-2 lg:my-3">Intelligent solutions</h4><br/>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+            <div class="bg-white py-6 px-4 lg:px-6 flex flex-col items-center rounded-lg">
+                <span class="text-blue-600"><i class="fa-solid fa-robot fa-2xl lg:fa-3x"></i></span>
+                <h6 class="text-lg lg:text-xl font-semibold text-center my-3">Pneumonia Detection</h6>
+                <p class="text-sm lg:text-base text-center">Our advanced X-ray image analysis component integrates state-of-the-art machine learning algorithms to aid healthcare professionals in accurately and swiftly interpreting X-ray images specifically for pneumonia diagnosis.</p>
+                
+                <div class="mt-4">
+                    <a href="{% url 'X-ray' %}" title="Learn more about Pneumonia Detection" class="text-white flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2">Pneumonia Detection</a>
+                </div>
+            </div>
+            <div class="bg-white py-6 px-4 lg:px-6 flex flex-col items-center rounded-lg">
+                <span class="text-blue-600"><i class="fa-solid fa-x-ray fa-2xl lg:fa-3x"></i></span>
+                <h6 class="text-lg lg:text-xl font-semibold text-center my-3">Symptom-Based Diagnosis Proposal</h6>
+                <p class="text-sm lg:text-base text-center">Our Symptom-Based Diagnosis module utilizes cutting-edge natural language processing (NLP) algorithms to analyze and interpret symptoms input by medical professionals.</p>
+                <div class="mt-4">
+                    <a href="{% url 'symptomes' %}" title="Learn more about Symptom Analysis" class="text-white flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2">Symptom Analysis</a>
+                </div>
+            </div>
+            <div class="bg-white py-6 px-4 lg:px-6 flex flex-col items-center rounded-lg">
+                <span class="text-blue-600"><i class="fa-solid fa-network-wired fa-2xl lg:fa-3x"></i></span>
+                <h6 class="text-lg lg:text-xl font-semibold text-center my-3">COVID-19 Identification</h6>
+                <p class="text-sm lg:text-base text-center">Our advanced X-ray image analysis component integrates state-of-the-art machine learning algorithms to aid healthcare professionals in accurately and swiftly interpreting X-ray images specifically for COVID-19 diagnosis.</p>
+                <div class="mt-4">
+                    <a href="{% url 'X-ray' %}" title="Learn more about COVID-19 Diagnosis" class="text-white flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2">COVID-19 Diagnosis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="bg-white py-8">
+        <div class="hidden md:flex w-[80%] m-auto p-4 lg:flex justify-evenly flex-wrap">
+          <div class="box-1st">
+            <div class="w-60 h-60">
+                <h3 class="text-2xl font-bold">Our team</h3>
+                <p class="text-sm">GCDSTE Students</p>
+              </div>
+          </div>
+      
+          <div class="box-4th">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Khadija Elmohtaj</h6>
+            </div>
+        </div>
+          <div class="box-2nd">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Hajar Ed-darrjy</h6>
+            </div>
+          </div>
+          <div class="box-3rd">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Saaida Hnais</h6>
+            </div>
+          </div>
+          <div class="box-5th">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Imane Chaik</h6>
+            </div>
+          </div>
+          <div class="box-6th">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Asmae Ehou</h6>
+            </div>
+          </div>
+          <div class="box-7th">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Yahya Boujabal</h6>
+            </div>
+          </div>
+          <div class="box-8th">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Imane Elgherb</h6>
+            </div>
+          </div>
+          <div class="box-9th">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">About</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Salma Chakiri</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div> <!-- Closing tag for the container div -->
+    <section id="call">
+      <h4 class="text-center text-xl lg:text-3xl my-4 font-bold">How To Find Us</h4>
+      <div class="bg-blue-600 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly py-14 my-8">
+        <div class="text-white flex justify-between lg:items-center py-2 lg:py-4  ml-6">
+          <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-map-location-dot"></i></span>
+          <div>
+            <p class="text-base lg:text-xl">Address</p>
+            <p class="text-xs lg:text-sm">BP 575 Bd Abdelkrim Al Khattabi, Guéliz، 40000</p>
+          </div>
+        </div>
+        
+        <div class="text-white flex justify-between lg:items-center py-4 ml-[13px]">
+          <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-2"><i class="fa-solid fa-mobile-screen-button"></i></span>
+          <div>
+            <p class="text-base lg:text-xl">Phone</p>
+            <p class="text-xs lg:text-sm">+121 600000000</p> 
+          </div>
+        </div>
+    
+        <div class="text-white flex justify-between lg:items-center py-4">
+          <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-envelope"></i></span>
+          <div>
+            <p class="text-base lg:text-xl">Email</p>
+            <p class="text-xs lg:text-sm">MedSmart24@gmail.com</p> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- New div here -->
+    <div class="text-center mt-8">
+      <!-- Content of your new div goes here -->
+      <p class="text-xs lg:text-sm">Copyright © 2024 MedSmart | created by </p> 
+      </section>
+    </div>
+    
+    
+    </main>
+    
+  </body>
+</html>

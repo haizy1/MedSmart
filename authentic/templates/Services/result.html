@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/168ebc7feb.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+    <title>Diagnosis Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    {% load static %}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image:url({% static 123456.jpg %});
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 50px auto;
+            background-image: url({% static "19373.jpg" %});
+            padding: 30px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+        }
+        .container h2 {
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .symptoms-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .symptom-box {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+
+        .predicted-disease-container {
+            background-color: #004080; /* Dark blue */
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-top: 10px; /* Adjust margin as needed */
+            display: inline-block; /* Ensure the container takes up only as much width as necessary */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+        }
+
+        .predicted-disease {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 3rem;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar-logo-image {
+            height: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .navbar-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-li {
+            margin-right: 1rem;
+        }
+
+        .navbar-link {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-link:hover {
+            color: #f0f0f0;
+        }
+
+        .navbar-button {
+            border: none;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .navbar-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="bg-gradient-to-r from-blue-700 to-[#ffffff00] py-2 w-full px-24 flex justify-between shadow-lg backdrop-blur-md z-50">
+            <a href="" class="flex items-center">
+              <!-- Image placed beside the title -->
+              <img src="{% static "logo.png" %}" alt="MedSmart Logo" class="h-8 mr-2">
+              <!-- Title -->
+              <p class="font-Inter font-bold text-lg text-white">MedSmart</p>
+            </a>
+            <div class="flex">
+              <ul class="flex text-white font-mono mr-8">
+                <li class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200">
+                  <a class="rounded bg-blue-500 px-4 py-2" href="#about">About Us</a>
+                </li>
+                <li class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200">
+                  <a class="rounded bg-blue-500 px-4 py-2" href="#services">Services</a>
+                </li>
+                <li class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200">
+                  <a class="rounded bg-blue-500 px-4 py-2" href="#call">Contact</a>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="text-white  bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Login
+              </button>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <h2>Your diagnosis:</h2>
+        <p>Your symptoms:</p>
+        <div class="symptoms-container">
+            {% for symptom in symptoms %}
+                <div class="symptom-box">{{ symptom }}</div>
+            {% endfor %}
+        </div>
+        <div >
+            <p>The predicted disease based on the symptoms you provided is:</p>
+            <strong class="predicted-disease predicted-disease-container">{{ predicted_disease1 }}</strong>
+        </div>
+        <!-- You can add more details about the diagnosis result here, such as probability scores, recommendations, etc. -->
+    </div>
+</body>
+</html>
