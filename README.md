@@ -26,6 +26,27 @@ Sur cette page, vous trouverez une liste complète de nos services, conçus pour
 
 ![page d'accueil](uploaded_images/home.png)
 
+**Page de Login** :
+![page de login](uploaded_images/login.png)
+
+**Page de Register** :
+![page register](uploaded_images/register.png)
+**Formulaire de prediction** :
+En cliquant sur le service **Symptom-Based Diagnosis Proposal**, vous serez dirigé vers une page où il vous faudra entrer le nom du patient, son CIN et les cinq symptômes principaux, ce qui permettra à l’algorithme de prédire la maladie.
+![formulaire de prediction](uploaded_images/Screenshot 2024-09-21 115708.png)
+
+**Resultat de prediction** :
+Puis vous serez  conduit à la page des résultats, comme le montre la figure suivante.
+![resultat de prediction](uploaded_images/Screenshot 2024-09-21 115856.png)
+**Prediction de tuberculose et pneumonie** :
+En cliquant sur l’un des services suivants : **Pneumonia Detection** ou **Tuberculosis Detection**, vous serez dirigé vers une page où vous devrez télécharger l’image de la radiographie pulmonaire de votre patient et indiquer s’il s’agit de pneumonie ou de tuberculose. Ces informations seront ensuite utilisées comme entrées pour l’algorithme, qui tentera de prédire la présence de l’une de ces maladies.
+![Prediction de tuberculose](uploaded_images/Screenshot 2024-09-21 115935.png)
+![resultat de prediction](uploaded_images/Screenshot 2024-09-21 120016.png)
+![Prediction de pneumonie](uploaded_images/Prediction de pneumonie.png)
+![resultat de prediction](uploaded_images/Prediction de pneumonie1.png)
+
+
+
 
 
 
