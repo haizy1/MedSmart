@@ -42,8 +42,8 @@ Puis vous serez  conduit à la page des résultats, comme le montre la figure su
 En cliquant sur l’un des services suivants : **Pneumonia Detection** ou **Tuberculosis Detection**, vous serez dirigé vers une page où vous devrez télécharger l’image de la radiographie pulmonaire de votre patient et indiquer s’il s’agit de pneumonie ou de tuberculose. Ces informations seront ensuite utilisées comme entrées pour l’algorithme, qui tentera de prédire la présence de l’une de ces maladies.
 ![Prediction de tuberculose](uploaded_images/Screenshot 2024-09-21 115935.png)
 ![resultat de prediction](uploaded_images/Screenshot 2024-09-21 120016.png)
-![Prediction de pneumonie](uploaded_images/Prediction de pneumonie.png) 
-![resultat de prediction](uploaded_images/Prediction de pneumonie1.png)
+![Prediction de pneumonie](uploaded_images/Prediction_de_pneumonie.png) 
+![resultat de prediction](uploaded_images/Prediction_de_pneumonie1.png)
 
 
 
