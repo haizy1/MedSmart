@@ -45,6 +45,34 @@ En cliquant sur l’un des services suivants : **Pneumonia Detection** ou **Tube
 ![Prediction de pneumonie](uploaded_images/Prediction_de_pneumonie.png) 
 ![resultat de prediction](uploaded_images/Prediction_de_pneumonie1.png)
 
+## Technologies Utilisées
+<table align="center">
+  <tr>
+    <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=html" width="45" height="45" alt="html" />
+      <br>HTML
+    </td>
+   <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=css" alt="icon" width="55" height="55" />
+      <br>CSS
+    </td>
+    <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=js" width="45" height="45" alt="js" />
+      <br>JS
+    </td>
+    <td align="center" width="90">
+        <img src="uploaded_images/googleColab.png" width="45" height="45" alt="api" />
+        <br>Google Colab
+  <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=python" width="45" height="45" alt="python" />
+      <br>PYTHON
+  </td>
+  <td align="center" width="90">
+      <img src="https://skillicons.dev/icons?i=django" width="45" height="45" alt="django" />
+      <br>Django
+  </td>
+</tr>
+</table>
 **MedSmart** vise à révolutionner le diagnostic médical en utilisant l'intelligence artificielle pour analyser des images radiographiques. Grâce à des modèles avancés, notre projet permet des diagnostics précis et rapides de maladies telles que la pneumonie et la tuberculose, offrant ainsi un outil précieux pour les professionnels de la santé.
 
 ## Membres de l'équipe
